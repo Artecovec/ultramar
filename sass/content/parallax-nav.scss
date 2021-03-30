@@ -1,0 +1,9 @@
+.parallax-nav {
+    @include stretch;
+
+    overflow: hidden;
+    @include user-select( none );
+    }
+
+@import "parallax-nav/parallax-nav_crystal-group";
+@import "parallax-nav/parallax-nav_single_crystal";

@@ -1,0 +1,10 @@
+.context-menu-link {
+    margin: 0 -17px;
+    padding: 6px 17px 5px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        background: #2797ba;
+        }
+    }

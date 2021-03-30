@@ -1,0 +1,22 @@
+#crystal-terminal {
+    left: -60px;
+    top:  25px;
+
+    width:  image-width(  "/images/crystal-terminal.png" );
+    height: image-height( "/images/crystal-terminal.png" );
+
+    .parallax-nav_single_crystal_normal {
+        background-image: url( /images/crystal-terminal.png );
+        }
+
+    .parallax-nav_single_crystal_bright {
+        background-image: url( /images/crystal-terminal-bright.png );
+        }
+
+    .context-menu {
+        top:  113px;
+        left: 152px;
+
+        width: 450px;
+        }
+    }

@@ -1,0 +1,33 @@
+.window1 {
+    min-width: 435px;
+}
+.project_year {
+    color: #afafaf;
+    font-family: sans-serif, Arial;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    background-color:rgba(0,71,111,0.6);
+    padding: 3px 5px;
+    position: relative;
+    bottom: 5px;
+    left: 15px;
+}
+#project2 h1 {
+    line-height: 1em;
+    margin-bottom: 32px;
+}
+#project2 .poster {
+    margin:1.5em 0;
+}
+a.back {
+    position:relative;
+    color: rgba(255,255,255,0.5);
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:11px;
+    background:url(../images/all-projects.png) no-repeat;
+    background-position:0% 37%;
+    padding-left: 26px;
+    top: -10px;
+    left: 12px;
+}

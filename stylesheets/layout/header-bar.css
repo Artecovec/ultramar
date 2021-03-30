@@ -1,0 +1,17 @@
+/* line 1, ../../sass/layout/header-bar.scss */
+#header-bar {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.44);
+}
+/* line 6, ../../sass/layout/header-bar.scss */
+#header-bar .main-menu {
+  margin-left: 281px;
+}
+
+/* line 11, ../../sass/layout/header-bar.scss */
+#logo {
+  top: 0;
+  left: 90px;
+  position: absolute;
+}

@@ -1,0 +1,10 @@
+$content__side-offset: 90px;
+
+.content {
+    margin: 0 auto;
+
+    padding-left:  $content__side-offset;
+    padding-right: $content__side-offset;
+
+    min-width: 820px;
+    }

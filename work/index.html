@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1016, maximum-scale=1.0" />
+    <title>ULTRAMAR</title>
+    <link href="../stylesheets/screen.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/the-modal.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/demo-modals.css" media="all">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../scripts/general.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.the-modal.js"></script>
+    <!--[if IE]>
+    <link href="../stylesheets/ie.css" rel="stylesheet" />
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wallpaper">
+        <div class="wallpaper_shadow wallpaper_shadow__top"></div>
+        <div class="wallpaper_shadow wallpaper_shadow__bottom"></div>
+    </div>
+    <div class="page">
+        <header class="head">
+            <div class="content">
+                <h1 id="logo" class="logo">ULTRAMAR</h1>
+                <nav>
+                    <ul class="main-menu very-main">
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="about-menu" class="main-menu_link" href="#about">О&nbsp;компании</a></h2>
+                            <ul class="main-submenu">
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="">История</a></li>
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="">Наши преимущества</a></li>
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="">Приоритеты</a></li>
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="">Показатели работы</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="services-menu" class="main-menu_link" href="#services">Услуги</a></h2>
+                        </li>
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="projects-menu" class="main-menu_link" href="#projects">Проекты</a></h2>
+                        </li>
+                        <li class="main-menu_button">
+                            <h2 id="terminal-menu" class="main-menu_head">Терминал</h2>
+                            <ul class="main-submenu">
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="#to-containers">Перегрузка из&nbsp;вагонов в&nbsp;контейнера</a></li>
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="#prepacking">Фасовка минеральных удобрений</a></li>
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="#liquid">Перегрузка жидких минеральных удобрений</a></li>
+                                <li class="main-submenu_button"><a class="main-submenu_link" href="#terminal">Общие сведения о&nbsp;терминале</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="partners-menu" class="main-menu_link" href="#partners">Партнеры</a></h2>
+                        </li>
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="contact-menu" class="main-menu_link" href="#contact">Контакты</a></h2>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="parallax-nav">
+            <aside class="parallax-nav_crystals">
+                <div id="crystal-group-0" class="parallax-nav_crystal-group"></div>
+                <div id="crystal-group-1" class="parallax-nav_crystal-group"></div>
+                <div id="crystal-group-2" class="parallax-nav_crystal-group"></div>
+                <div id="crystal-group-3" class="parallax-nav_crystal-group"></div>
+                <div id="crystal-group-4" class="parallax-nav_crystal-group"></div>
+                <div id="crystal-group-5" class="parallax-nav_crystal-group"></div>
+                <div id="crystal-group-6" class="parallax-nav_crystal-group"></div>
+            </aside>
+            <nav>
+                <article id="crystal-about" class="parallax-nav_single_crystal">
+                    <a class="parallax-nav_single_crystal__link" href="#about">
+                        <div class="parallax-nav_single_crystal_normal"></div>
+                        <div class="parallax-nav_single_crystal_bright"></div>
+                        <article class="context-menu">
+                            <h1 class="context-menu-header">О&nbsp;компании</h1>
+                            <ul class="context-menu-button-list">
+                                <li class="context-menu-button"><a class="context-menu-link" href="">История</a></li>
+                                <li class="context-menu-button"><a class="context-menu-link" href="">Наши преимущества</a></li>
+                                <li class="context-menu-button"><a class="context-menu-link" href="">Приоритеты</a></li>
+                                <li class="context-menu-button"><a class="context-menu-link" href="">Показатели работы</a></li>
+                            </ul>
+                        </article>
+                    </a>
+                </article>
+                <article id="crystal-services" class="parallax-nav_single_crystal">
+                    <a class="parallax-nav_single_crystal__link" href="#services">
+                        <div class="parallax-nav_single_crystal_normal"></div>
+                        <div class="parallax-nav_single_crystal_bright"></div>
+                        <article class="context-menu">
+                            <h1 class="context-menu-header context-menu-header__single">Услуги</h1>
+                        </article>
+                    </a>
+                </article>
+                <article id="crystal-terminal" class="parallax-nav_single_crystal">
+                    <div class="parallax-nav_single_crystal_normal"></div>
+                    <div class="parallax-nav_single_crystal_bright"></div>
+                    <article class="context-menu">
+                        <h1 class="context-menu-header">Терминал</h1>
+                        <ul class="context-menu-button-list">
+                            <li class="context-menu-button"><a class="context-menu-link" href="#to-containers">Перегрузка из&nbsp;вагонов в&nbsp;контейнера</a></li>
+                            <li class="context-menu-button"><a class="context-menu-link" href="#prepacking">Фасовка минеральных удобрений</a></li>
+                            <li class="context-menu-button"><a class="context-menu-link" href="#liquid">Перегрузка жидких минеральных удобрений</a></li>
+                            <li class="context-menu-button"><a class="context-menu-link" href="#terminal">Общие сведения о&nbsp;терминале</a></li>
+                        </ul>
+                    </article>
+                </article>
+                <article id="crystal-1" class="parallax-nav_single_crystal">
+                    <a class="parallax-nav_single_crystal__link" href="#projects">
+                        <div class="parallax-nav_single_crystal_normal"></div>
+                        <div class="parallax-nav_single_crystal_bright"></div>
+                        <article class="context-menu">
+                            <h1 class="context-menu-header context-menu-header__single">Проекты</h1>
+                        </article>
+                    </a>
+                </article>
+                <article id="crystal-contacts" class="parallax-nav_single_crystal">
+                    <a class="parallax-nav_single_crystal__link" href="#contact">
+                        <div class="parallax-nav_single_crystal_normal"></div>
+                        <div class="parallax-nav_single_crystal_bright"></div>
+                        <article class="context-menu">
+                            <h1 class="context-menu-header context-menu-header__single">Контакты</h1>
+                        </article>
+                    </a>
+                </article>
+                <article id="crystal-2" class="parallax-nav_single_crystal">
+                    <a class="parallax-nav_single_crystal__link" href="#partners">
+                        <div class="parallax-nav_single_crystal_normal"></div>
+                        <div class="parallax-nav_single_crystal_bright"></div>
+                        <article class="context-menu">
+                            <h1 class="context-menu-header context-menu-header__single">Партнеры</h1>
+                        </article>
+                    </a>
+                </article>
+            </nav>
+        </section>
+        <div id="bird" class="bird"></div>
+        <section class="pages">
+            <div id="about" class="window-wrap">
+                <section class="window">
+                    <div class="window-content">
+                        <span class="window-close-button"></span>
+                        <header><h1>О&nbsp;компании</h1></header>
+                        <p>Компания &laquo;Ультрамар&raquo; была основана в&nbsp;2007 году как логистический оператор с&nbsp;офисами в&nbsp;двух крупнейших городах-портах на&nbsp;Балтийском море&nbsp;&mdash; Риге и&nbsp;Санкт-Петербурге. В&nbsp;2009 году в&nbsp;Санкт-Петербурге был построен первый терминал компании &laquo;Ультрамар&raquo; по&nbsp;перегрузке минеральных удобрений из&nbsp;вагонов в&nbsp;контейнера <strong>без промежуточного складирования (по&nbsp;прямому варианту).</strong></p>
+                        <p>В&nbsp;2010 году в&nbsp;связи с&nbsp;развитием новых направлений и&nbsp;увеличением объема перевозок было принято решение о&nbsp;строительстве второй очереди терминала по&nbsp;перегрузке. На&nbsp;сегодняшний день &laquo;Ультрамар&raquo; является крупнейшим перевозчиком минеральных удобрений в&nbsp;контейнерах. За&nbsp;2011 год компанией перевезено более 1&nbsp;млн. тонн удобрений из&nbsp;портов Балтики по&nbsp;всему миру.</p>
+                        <h4><em>&laquo;Ультрамар&raquo; гордится</em> тем, что партнерами компании являются крупнейшие российские производители минеральных удобрений:</h4>
+                        <ol>
+                            <li>Акрон.</li>
+                            <li>ФосАГРО.</li>
+                            <li>Уралхим.</li>
+                            <li>Минудобрение.</li>
+                        </ol>
+                        <p>Компания &laquo;Ультрамар&raquo; постоянно <strong class="important">инвестирует значительные средства</strong> в&nbsp;развитие и&nbsp;усовершенствование технологий, которые позволяют еще более качественно и&nbsp;быстро перегружать и&nbsp;доставлять грузы партнеров.</p>
+                        <h4>Главные приоритеты компании &laquo;Ультрамар&raquo;:</h4>
+                        <ol>
+                            <li>Высококачественный сервис.</li>
+                            <li>Надежность.</li>
+                            <li>Прогнозируемость отношений с&nbsp;партнерами.</li>
+                            <li>Оперативность.</li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
+            <div id="services" class="window-wrap">
+                <section class="window">
+                    <div class="window-content">
+                        <span class="window-close-button"></span>
+                        <header><h1>Услуги</h1></header>
+                        <a class="poster" style="background-image: url( ../img/services.jpg );" href="../img/services-large.jpg"></a>
+                        <p>Компания &laquo;Ультрамар&raquo; осуществляет полный комплекс услуг по&nbsp;перевозке минеральных удобрений в&nbsp;контейнерах из&nbsp;портов Балтики по&nbsp;всему миру.</p>
+                        <h4><strong>Основные направления деятельности</strong> компании:</h4>
+                        <ul>
+                            <li>доставка минеральных удобрений от&nbsp;завода до&nbsp;порта в&nbsp;вагонах;</li>
+                            <li>перегрузка из&nbsp;вагонов в&nbsp;контейнера;</li>
+                            <li>доставка контейнеров в&nbsp;любую точку мира.</li>
+                        </ul>
+                        <a class="poster" style="background-image: url( ../img/liner.jpg );" href="../img/liner-large.jpg"></a>
+                        <h4>Для реализации этих целей &laquo;Ультрамар&raquo; имеет в&nbsp;собственном управлении:</h4>
+                        <ul>
+                            <li>подвижной ж/д состав;</li>
+                            <li>специализированный перегрузочный терминал;</li>
+                            <li>сервисные контракты с&nbsp;крупнейшими контейнерными линиями.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div id="projects" class="window-wrap">
+                <section class="window">
+                        <div class="window-content">
+                            <span class="window-close-button"></span>
+                            <header><h1>Проекты</h1></header>
+                            <div id="project-list">
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-1.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-2.jpg" title="" />
+                                    <p>Перевозки&nbsp;по&nbsp;железной&nbsp;<br>дороге&nbsp;Доставка&nbsp;грузов</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-3.jpg" title="" />
+                                    <p>Экспедирование&nbsp;и&nbsp;<br>перевозка&nbsp;грузов</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-4.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-5.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-6.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-1.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-2.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-3.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-4.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                                <a href="inner-project.html#project2" class="container">
+                                    <img src="../img/Projects-5.jpg" title="" />
+                                    <p>Информационная&nbsp;система<br>по&nbsp;грузоперевозкам.</p>
+                                    <span>2014</span>
+                                </a>
+                            </div><!-- end #project-list -->
+                        </div>
+                </section>
+            </div>
+            <div id="project2" class="window-wrap">
+                <section class="window">
+                    <div class="window-content">
+                        <span class="window-close-button"></span>
+                        <header><h1>Информационная система<br>по грузоперевозкам.</h1></header>
+                        <a class="poster" style="background-image: url( ../img/Project-1.jpg );" href="../img/Project-1-large.jpg"></a>
+                        <p>
+                            Контейнеры стандартного размера&nbsp;легко перемещаются любым транспортом,&nbsp;а также сохраняют&nbsp;товар.&nbsp;
+                            Перевозки по&nbsp;железной дороге – самый&nbsp;удобный способ доставки&nbsp;грузов в любой&nbsp;пункт назначения.
+                            Вы&nbsp;спросите – почему? Потому&nbsp;что контейнеры стандартного&nbsp;размера легко перемещаются&nbsp;любым транспортом, а&nbsp;также сохраняют товар.
+                        </p>
+                        <a class="poster" style="background-image: url( ../img/Project-1.jpg );" href="../img/Project-1-large.jpg"></a>
+                        <h4>Для реализации этих целей &laquo;Ультрамар&raquo; имеет в&nbsp;собственном управлении:</h4>
+                        <ul>
+                            <li>подвижной ж/д состав;</li>
+                            <li>специализированный перегрузочный терминал;</li>
+                            <li>сервисные контракты с&nbsp;крупнейшими контейнерными линиями.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div id="to-containers" class="window-wrap">
+                <section class="window">
+                    <div class="window-content" >
+                        <span class="window-close-button"></span>
+                        <header><h1>Перегрузка из&nbsp;вагонов в&nbsp;контейнера</h1></header>
+                        <a class="poster" style="background-image: url( ../img/to-containers.jpg );" href="../img/to-containers-large.jpg"></a>
+                        <p><em>Перегрузка минеральных удобрений из&nbsp;вагонов в&nbsp;контейнера осуществляется напрямую, без промежуточного складирования</em> (вагон&nbsp;&mdash; контейнер). Максимальная мощность работы терминала&nbsp;&mdash; 72&nbsp;вагона в&nbsp;сутки.</p>
+                        <p>Терминал принимает и&nbsp;отправляет <strong>вагоны типа Хоппер</strong> маршрутными отправками. Дальнейшая отправка контейнеров с&nbsp;терминала &laquo;Ультрамар&raquo; в&nbsp;контейнерные терминалы Санкт-Петербурга <em>осуществляется</em> ускоренными контейнерными поездами (УКП&nbsp;/blocktrain).</p>
+                    </div>
+                </section>
+            </div>
+            <div id="prepacking" class="window-wrap">
+                <section class="window">
+                    <div class="window-content SuppressScrollX">
+                        <span class="window-close-button"></span>
+                        <header><h1>Фасовка минеральных удобрений</h1></header>
+                        <a class="poster" style="background-image: url( ../img/prepacking.jpg );" href="../img/prepacking-large.jpg"></a>
+                        <h4>Фасовка осуществляется <em>напрямую</em> из&nbsp;вагонов в&nbsp;мешки или биг-беги с&nbsp;последующей загрузкой в&nbsp;контейнера следующих типоразмеров:</h4>
+                        <ul>
+                            <li><strong>20-ти и&nbsp;40-ка футовый стандартный контейнер;</strong></li>
+                            <li><strong>20-ти и&nbsp;40-ка футовый рефрижераторный контейнер.</strong></li>
+                        </ul>
+                        <p>Общая мощность оборудования по&nbsp;фасовке&nbsp;&mdash; 1000 тонн в&nbsp;сутки.</p>
+                        <h4><strong>Возможные объемы упаковки:</strong></h4>
+                        <ul>
+                            <li>мешки&nbsp;&mdash; 25&nbsp;кг, 50&nbsp;кг;</li>
+                            <li>биг-беги&nbsp;&mdash; 500&nbsp;кг, 1000кг, 1250&nbsp;кг.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div id="liquid" class="window-wrap">
+                <section class="window">
+                    <div class="window-content">
+                        <span class="window-close-button"></span>
+                        <header><h1>Перегрузка жидких минеральных удобрений</h1></header>
+                        <a class="poster" style="background-image: url( ../img/liquid.jpg );" href="../img/liquid-large.jpg"></a>
+                        <p>Перегрузка осуществляется <em>напрямую</em> из&nbsp;цистерн в&nbsp;контейнера, в&nbsp;которые предварительно устанавливаются <em>флекситанки.</em> Общая мощность перегрузки составляет 1500 тонн в&nbsp;сутки.</p>
+                    </div>
+                </section>
+            </div>
+            <div id="terminal" class="window-wrap">
+                <section class="window">
+                    <div class="window-content SuppressScrollX">
+                        <span class="window-close-button"></span>
+                        <header><h1>Общие сведения о&nbsp;терминале</h1></header>
+                        <a class="poster" style="background-image: url( ../img/terminal.jpg );" href="../img/terminal-large.jpg"></a>
+                        <p>Вместимость терминала составляет 8000&nbsp;TEU. Пропускная способность&nbsp;&mdash; 5&nbsp;поездов в&nbsp;сутки (300&nbsp;вагонов). На&nbsp;терминале также осуществляется перегрузка фасованных грузов из&nbsp;крытых вагонов и&nbsp;полувагонов в&nbsp;контейнера.</p>
+                    </div>
+                </section>
+            </div>
+            <div id="partners" class="window-wrap">
+                <section class="window wind">
+                    <div class="window-content">
+                        <span class="window-close-button"></span>
+                        <header><h1>Партнеры</h1></header>
+                        <div class="image-gallery" style="padding-top: 10px;">
+                            <div class="par">
+                                <img src="../img/Partners-11.jpg" title="" />
+                            </div>
+                            <div  class="par">
+                                <img src="../img/Partners-22.jpg" title="" />
+                            </div>
+                            <div class="par">
+                                <img src="../img/Partners-33.jpg" title="" />
+                            </div>
+                            <div class="par">
+                                <img src="../img/Partners-44.jpg" title="" />
+                            </div>
+                            <div class="par">
+                                <img src="../img/Partners-55.jpg" title="" />
+                            </div>
+                            <div class="par">
+                                <img src="../img/Partners-66.jpg" title="" />
+                            </div>
+                            <div class="par">
+                                <img src="../img/Partners-77.jpg" title="" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="contact" class="window-wrap">
+                <section class="window contact-window">
+                     <div class="window-content">
+                        <span class="window-close-button"></span>
+                        <header><h1>Контактная информация</h1></header>
+                         <ul>
+                             <li class="piter">
+                                 <div class="cities city">
+                                     <div class="cities1">
+                                        <a href="#" class="selected">Санкт-Петербург</a>
+                                     </div>
+                                 </div>
+                             </li>
+                             <li class="riga">
+                                 <div class="cities">
+                                     <div class="cities1">
+                                         <a href="#" >Рига</a>
+                                     </div>
+                                 </div>
+                             </li>
+                             <li class="singapur">
+                                 <div class="cities">
+                                     <div class="cities1">
+                                         <a href="#">Сингапур</a>
+                                     </div>
+                                 </div>
+                             </li>
+                             <li class="san_paulu">
+                                 <div class="cities">
+                                     <div class="cities1">
+                                         <a href="#">Сан-Паулу</a>
+                                     </div>
+                                 </div>
+                             </li>
+                         </ul>
+                         <div class="left">
+                         <div class="address">
+                             <p data-address>
+                                 Адрес офиса:<br>
+                                 196210, Санкт-Петербург,<br>
+                                 ул. Стартовая, 8-411<br>
+                             </p>
+                             <p>
+                                 тел:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+7 812 334 43 85<br>
+                                 факс:&nbsp;&nbsp;&nbsp;+7 812 334 43 86<br>
+                                 e-mail:&nbsp;&nbsp;info@ultramar.spb.ru<br>
+                             </p>
+                         </div>
+                         <div class="map">
+                             <a href="#" class="google_map">Посмотреть на google maps</a>
+                         </div>
+                         </div>
+                             <script type="text/javascript">
+                                 function showTime()
+                                 {
+                                     var dat = new Date();
+                                     var H = '' + dat.getHours();
+                                     H = H.length<2 ? '0' + H:H;
+                                     var M = '' + dat.getMinutes();
+                                     M = M.length<2 ? '0' + M:M;
+                                     var S = '' + dat.getSeconds();
+                                     S =S.length<2 ? '0' + S:S;
+                                     var clock = H + ':' + M;
+                                     document
+                                             .getElementById('time_div')
+                                             .innerHTML=clock;
+                                     setTimeout(showTime,1000); // перерисовать 1 раз в сек.
+                                 }
+                             </script>
+                         <figure class="clock">
+                             <img class="clock_border" src="../images/time_bg.png">
+                             <figcaption>
+                                 <div id="time_div"></div>
+                                 <span class="time_zone">Местное время</span>
+                                 <span class="time_zone utc">(UTC+04:00)</span>
+                             </figcaption>
+                         </figure>
+                         <script type="text/javascript">
+                             showTime();
+                         </script>
+                     </div>
+                </section>
+            </div>
+        </section>
+        <section id="photo-wrap" class="photo-wrap">
+            <div class="photo-close-button"></div>
+            <div id="photo" class="photo"></div>
+        </section>
+        <div class="sham-foot"></div>
+    </div>
+    <footer class="foot content1">
+        <address class="copyright">
+            <em><span class="copyright_sign">&copy;&nbsp;2012-2014</span>, Компания &laquo;Ультрамар&raquo;</em>
+            <strong class="copyright_reserved">Все права защищены</strong>
+        </address>
+        <!--<nav class="language-menu">
+            <ul class="language-menu_list">
+                <li class="language-menu_button"><a class="language-menu_link language-menu_link__selected" title="Русский">Рус</a></li>
+                <li class="language-menu_button"><a class="language-menu_link" href="index-eng.html" title="English">Eng</a></li>
+            </ul>
+        </nav>-->
+        <div class="private">
+            <img class="kabinet" src="../images/enter_kabinet.png" alt="private office">
+            <a class="trigger" href="">Личный  кабинет</a>
+        </div>
+        <div class="modal" id="test-modal" style="display: none"> <!-- окно -->
+            <span class="close noselect"></span> <!-- Кнопка закрыть -->
+            <h1 class="noselect">Вход в личный кабинет</h1>
+            <p class="noselect">Логин</p>
+            <input type="text"  name="name" class="login_data noselect" maxlength="20" />
+            <p class="noselect">Пароль</p>
+            <input type="password" class="login_data noselect" maxlength="25" />
+            <div class="register noselect">
+            <a  href="#" class="forget noselect">Забыли пароль?</a>
+            <a href="#" class="button noselect">Войти</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(function($){
+                // bind event handlers to modal triggers
+                $('body').on('click', '.trigger', function(e){
+                    e.preventDefault();
+                    $('#test-modal').modal().open();
+                });
+
+                // attach modal close handler
+                $('.modal .close').on('click', function(e){
+                    e.preventDefault();
+                    $.modal().close();
+                });
+
+                // below isn't important (demo-specific things)
+                $('.modal .more-toggle').on('click', function(e){
+                    e.stopPropagation();
+                    $('.modal .more').toggle();
+                });
+            });
+        </script>
+    </footer>
+</body>
+</html>

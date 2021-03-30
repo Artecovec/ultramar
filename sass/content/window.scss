@@ -1,0 +1,51 @@
+@import "window/window-close-button";
+@import "window/window-content";
+
+.window {
+    min-width: 360px;
+    max-width: 1000px;
+    padding: 250px 0 35px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 480px;
+    margin-right: 80px;
+
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+        margin: 9px 0 0;
+        }
+
+    h4 {
+        margin-top: 1em;
+        }
+
+    p {
+        margin: 1em 0;
+        }
+
+    ul {
+        margin: 0 0 0 2.5em;
+        list-style: circle;
+        }
+
+    ol {
+        list-style: decimal;
+        margin: 0 0 0 2.5em;
+        }
+
+    strong, em {
+        font-weight: bold;
+        }
+
+    .poster {
+        margin: 1em 0;
+        }
+
+    }
+
+.window-wrap {
+    top: 0;
+    width: 100%;
+    position: relative;
+    }

@@ -1,0 +1,17 @@
+.head {
+    .main-menu {
+        @include float-left;
+        margin-left: image-width( '/images/logo.png' ) + 24px;
+        }
+
+    .logo {
+        top: 0;
+        left: 90px;
+        position: absolute;
+        }
+
+    .sound-button {
+        position: relative;
+        @include float-right;
+        }
+    }

@@ -1,0 +1,49 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+.head {
+    background: #020406;
+    }
+
+.main-submenu_link {
+    &:hover {
+        background:transparent;
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#14ffffff,endColorstr=#14ffffff);
+        zoom: 1;
+        }
+    }
+
+.main-menu_button {
+    &:hover {
+        .main-menu_head {
+            background:transparent;
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1fffffff,endColorstr=#1fffffff);
+            zoom: 1;
+            }
+        }
+    }
+
+.main-menu_link__selected {
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3801759a,endColorstr=#3801759a);
+    zoom: 1;
+    }
+
+.main-submenu {
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#733c3c3c,endColorstr=#733c3c3c);
+    zoom: 1;
+    }
+
+.window-content {
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#df058cb8,endColorstr=#df058cb8);
+    zoom: 1;
+    }
+
+.author {
+    *display: none;
+    }

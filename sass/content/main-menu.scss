@@ -1,0 +1,16 @@
+.main-menu {
+    @include clearfix;
+    @include user-select( none );
+
+    .main-submenu {
+        top: 70px;
+        position: absolute;
+        display: none;
+        }
+    }
+
+@import "main-menu/main-menu_button";
+@import "main-menu/main-menu_head";
+@import "main-menu/main-menu_link";
+
+@import "main-menu/main-submenu";

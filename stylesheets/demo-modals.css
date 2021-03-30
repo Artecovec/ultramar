@@ -1,0 +1,321 @@
+/* modal box style, can be anything you want */
+.modal {
+    margin: 200px auto;
+    position: relative;
+    font-family: 'Open Sans', serif;
+}
+#test-modal {
+    width: 420px;
+    height: 293px;
+    background: #0297c6;
+    padding: 20px 40px 40px;
+    letter-spacing: 0.02em;
+}
+#test-modal h1 {
+    font-size: 34px;
+    text-transform: none;
+    margin: 13px 0 10px;
+    letter-spacing: 0;
+}
+#test-modal p {
+    text-transform: none;
+    font-size: 16px;
+    margin: 0;
+}
+#test-modal a {
+    text-transform: none;
+    color: #fff;
+    letter-spacing: 0.02em;
+}
+.login_data {
+    margin: 0;
+    padding: 2px 5px;
+    width: 393px;
+    height: 36px;
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+a.button {
+    padding: 9px 0 8px 37px;
+    border: 0;
+    width: 75px;
+    height: 27px;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+    background: url(../images/key.png) no-repeat;
+    background-position: 12% 50%;
+    background-color: #16abdc;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    float: right;
+    text-decoration: none;
+    right: 13px;
+}
+a.button:hover {
+    top: 2px;
+    box-shadow: none;
+}
+.register {
+    margin-top: 13px;
+}
+a.forget {
+    font-size: 16px;
+    line-height: 2.5em;
+}
+.close {
+    width:35px;
+    height:35px;
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+    background:#fff url(../images/window-close-button.png) no-repeat;
+}
+/********************modals-private*******************/
+/******************modal-order****************/
+#test-modal1 {
+    width: 740px;
+    height: 707px;
+    background: #048bb7;
+    padding: 20px 40px 40px;
+    letter-spacing: 0;
+}
+#test-modal1 h1 {
+    font-size: 30px;
+    text-transform: none;
+    margin: 6px 0 30px;
+    letter-spacing: 0.022em;
+}
+#test-modal1 p {
+    text-transform: none;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 0;
+}
+#test-modal1 a {
+    text-transform: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+#test-modal1 ul li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+#test-modal1 ul li:last-child {
+    margin: 0;
+}
+.order_data {
+    margin: 8px 0 13px 0;
+    padding: 2px 5px;
+    width: 726px;
+    height: 36px;
+    font-size: 16px;
+    border: 2px solid #006080;
+}
+a.button_order {
+    padding: 12px 30px 12px 43px;
+    border: 0;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+    background: url(../images/send_order.png) no-repeat;
+    background-position: 8% 50%;
+    background-color: #16abdc ;
+    color: #fff;
+    font-size:18px;
+    font-weight: 100;
+    outline: none;
+    float: right;
+    text-decoration: none;
+    bottom: 18px;
+}
+a.button_order:hover {
+    bottom: 16px;
+    box-shadow: none;
+}
+.confirm {
+    margin-top: 25px;
+}
+.confirm span {
+    color: #bfd4db;
+}
+.weight {
+    width: 100px;
+}
+.container_type {
+    width: 405px;
+}
+.container_place {
+    width: 145px;
+}
+.contact_person {
+    width: 588px;
+}
+.idea {
+    width: 100px;
+}
+/***********************modal-file****************/
+#test-modal2 {
+    width: 900px;
+    background: #048bb7;
+    padding: 20px 36px 0 36px;
+    letter-spacing: -0.02pt;
+    word-spacing: -0.5pt;
+}
+#test-modal2 h1, .test-modal3 h1 {
+    font-size: 30px;
+    text-transform: none;
+    margin: 0 0 17px 0;
+    letter-spacing: -0.02pt;
+    word-spacing: -0.5pt;
+}
+#test-modal2 a {
+    text-transform: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+#test-modal2 ul li {
+    float: left;
+    width: 33.33%;
+    margin-bottom:8px;
+    position: relative;
+}
+#test-modal2 ul {
+    width: 900px;
+    overflow: hidden;
+}
+#test-modal2 ul li span {
+    background: url(../images/file_bg.png)no-repeat;
+    color: rgba(255,255,255,0.5);
+    padding: 4px 5px 13px 3px;
+    font-size: 7px;
+    text-transform: uppercase;
+    position: absolute;
+}
+#test-modal2 ul li a {
+    font-size: 13px;
+    margin: 0 0 0 25px;
+    font-weight: bold;
+    position: relative;
+    padding: 3px 80px 3px 3px;
+}
+#test-modal2 ul li a:active {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    background-size: 400px;
+}
+#test-modal2 ul li a:hover {
+    text-decoration: none;
+}
+a.button_file {
+    padding: 12px 27px 12px 39px;
+    /*border: 0;*/
+    box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+    background: url(../images/send_order.png) no-repeat;
+    background-position: 10% 50%;
+    background-color: #057ea9;
+    color: #fff;
+    font-size:18px;
+    /*outline: none;*/
+    /*float: right;*/
+    left: 736px;
+    text-decoration: none;
+}
+a.button_file:hover {
+    top:2px;
+    box-shadow: none;
+}
+#file_title {
+    background: #026d91;
+    padding: 10px 15px;
+    font-size: 13px;
+    display:inline-block;
+    margin: 20px 0 0;
+}
+.modal_view_file {
+    width: 900px;
+    height: 655px;
+    background: #fff;
+    border: 2px solid #e1e1e1;
+    -webkit-box-shadow:inset 0 3px 10px -4px rgba(0,0,0,0.3);
+    box-shadow:inset 0 3px 10px -4px rgba(0,0,0,0.3);
+}
+.comments {
+    background: url(../images/border_comments.png) repeat-x top, #026d91;
+    width:900px;
+    margin: 30px 0 0 -36px;
+    padding: 30px 36px;
+    height: 415px;
+}
+.comments h2 {
+    font-size: 22px;
+    margin:0 0 20px 0;
+}
+.comments textarea {
+    width: 870px;
+    height: 90px;
+    padding: 12px 14px;
+    resize: none;
+    border: 2px solid #006080;
+    outline: none;
+    margin-bottom: 30px;
+}
+textarea::-webkit-input-placeholder { color:#575757; }
+textarea:-moz-placeholder { color:#575757; }
+textarea:-ms-input-placeholder { color:#575757; }
+
+.previous_comments p, .previous_comments span {
+    display: inline-block;
+}
+.previous_comments span {
+    float: right;
+    font-size: 11px;
+    opacity: 0.5;
+}
+.previous_comments p  {
+    font-size: 14px;
+}
+.previous_comments {
+    margin: 0 0 29px 0;
+}
+.previous_comments1 {
+    background: url(../images/comment_bg.png)no-repeat;
+    width: 883px;
+    height: 39px;
+    padding: 21px 0 0 18px;
+    position: relative;
+}
+.previous_comments1 img {
+    position: absolute;
+    top:7px;
+    right:0;
+}
+/***********************new table****************/
+.first_container {
+    background: #758ba9;
+}
+.second_container {
+    background: #5d718b;
+}
+.table_container table {
+    position: relative;
+    float: left;
+}
+.first_container table {
+    margin: 0 -8px 0 11px;
+}
+.second_container table {
+    margin: 10px -8px 10px 11px;
+}
+
+
+
+

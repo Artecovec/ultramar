@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1016, maximum-scale=1.0" />
+    <title>ULTRAMAR</title>
+    <link href="../stylesheets/screen.css" rel="stylesheet" />
+    <link href="../stylesheets/personal.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/the-modal.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/demo-modals.css" media="all">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/general.min.js"></script>
+    <script src="../scripts/placeme.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../scripts/jquery.the-modal.js"></script>
+    <!--[if IE]>
+    <link href="../stylesheets/ie.css" rel="stylesheet" />
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type='text/javascript' >
+        function open_close(id) {
+            var el = document.getElementById(id);
+            if (el.style.display != 'none' ) {
+                el.style.display = 'none';
+            } else {
+                el.style.display = '';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wallpaper blue">
+        <div class="wallpaper_shadow wallpaper_shadow__top"></div>
+    </div>
+    <div class="page">
+        <header class="head">
+            <div class="content_private">
+                <h1 class="logo_private">ULTRAMAR</h1>
+                <nav>
+                    <ul class="main-menu">
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="contract-menu" class="main-menu_link" href="#contract">Контракты</a></h2>
+                        </li>
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="order-menu" class="main-menu_link" href="#order">Заявка на контракт</a></h2>
+                        </li>
+                        <li class="main-menu_button">
+                            <h2 class="main-menu_head"><a id="archive-menu" class="main-menu_link" href="#archive">Архив заявок</a></h2>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="data">
+                    <nav class="language-menu">
+                        <ul class="language-menu_list">
+                            <li class="language-menu_button"><a class="language-menu_link language-menu_link__selected language_private" href="/eng/index.html" title="English">Eng</a></li>
+                        </ul>
+                    </nav>
+                    <img class="kabinet_private" src="../images/enter_kabinet.png" alt="private room">
+                    <span>Иван Петров</span>
+                    <a id="exit" href="index.html">Выход</a>
+                </div>
+            </div>
+        </header>
+        <section class="pages">
+            <div id="contract" class="window-wrap">
+                    <div class="sheet">
+                        <a class="export_file_link" href="">Экспорт в файл MS Excel</a>
+                        <header><h1>Контракты</h1></header>
+                        <table>
+                            <thead>
+                                <tr class="table_top">
+                                    <th width="142" class="table-top1 contract-number">№ контракта</th>
+                                    <th width="174" class="table-top1">Завод</th>
+                                    <th width="143" class="table-top1">Дата загрузки</th>
+                                    <th width="143" class="table-top1">Дата прихода</th>
+                                    <th width="218" class="table-top1">ГТД</th>
+                                    <th width="188" class="table-top1">Кол-во вагонов</th>
+                                    <th width="120">Грузить по</th>
+                                    <th width="98" rowspan="2" class="table_corner">Файлы</th>
+                                </tr>
+                                <tr class="table_top2">
+                                    <th>Дата начала</th>
+                                    <th>Регион/Порт</th>
+                                    <th>Вес</th>
+                                    <th>Груз</th>
+                                    <th>Тип контейнера</th>
+                                    <th>Кол-во контейнеров</th>
+                                    <th>Опцион</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr onclick="open_close('1')">
+                                    <td class="number angle"><a>328/26</a></td>
+                                    <td>ОАО ФОСАГРО Чер.</td>
+                                    <td>11.11.2014</td>
+                                    <td>11.11.2014</td>
+                                    <td>10124457</td>
+                                    <td>32</td>
+                                    <td>27.000</td>
+                                    <td rowspan="2" class="right-b"><a href="" class="file trigger-file">4</a></td>
+                                </tr>
+                                <tr onclick="open_close('1')">
+                                    <td>01.05.2014</td>
+                                    <td>Riga</td>
+                                    <td>2000</td>
+                                    <td>МАР К</td>
+                                    <td>40 REF</td>
+                                    <td>80</td>
+                                    <td>5%</td>
+                                </tr>
+                                <tr class="table_container first_container" id="1" style="display: none;">
+                                    <td colspan="8" class="right-b">
+                                        <table>
+                                            <thead>
+                                                <tr class="table_top4">
+                                                    <th width="210">№ коносомента</th>
+                                                    <th width="210">Линия</th>
+                                                    <th width="210">Порт загрузки</th>
+                                                    <th width="210">Фидерное судно</th>
+                                                    <th width="210">Порт назначения</th>
+                                                    <th width="210" class="right-b">Статус документов</th>
+                                                </tr>
+                                                <tr class="table_top4">
+                                                    <th>№ букинга</th>
+                                                    <th>Планируемый вес</th>
+                                                    <th>Финальный вес</th>
+                                                    <th>Дата выхода груза</th>
+                                                    <th>Приход груза</th>
+                                                    <th class="right-b">Комментарии</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr onclick="open_close('2')">
+                                                <td class="number angle"><a>328/26</a></td>
+                                                <td>ОАО ФОСАГРО Чер.</td>
+                                                <td>11.11.2014</td>
+                                                <td>11.11.2014</td>
+                                                <td>10124457</td>
+                                                <td class="right-b">32</td>
+                                            </tr>
+                                            <tr onclick="open_close('2')">
+                                                <td>01.05.2014</td>
+                                                <td>Riga</td>
+                                                <td>2000</td>
+                                                <td>МАР К</td>
+                                                <td>40 REF</td>
+                                                <td class="right-b">80</td>
+                                            </tr>
+                                            <tr class="table_container second_container" id="2" style="display: none;">
+                                                <td colspan="8" class="right-b">
+                                                    <table>
+                                                        <thead>
+                                                        <tr class="table_top5">
+                                                            <th width="210">Порядковый номер</th>
+                                                            <th width="210">№ контейнера</th>
+                                                            <th width="210">№ пломбы</th>
+                                                            <th width="210">Вес нетто</th>
+                                                            <th width="210">Кол-во мест</th>
+                                                            <th width="210" class="right-b">Номер поезда</th>
+                                                        </tr>
+                                                        <tr class="table_top5">
+                                                            <th>№ букинга</th>
+                                                            <th>Планируемый вес</th>
+                                                            <th>Вес контейнера</th>
+                                                            <th>Вес гросс</th>
+                                                            <th>Кол-во брусьев</th>
+                                                            <th class="right-b">Тип контейнера</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="number"><a>328/26</a></td>
+                                                            <td>ОАО ФОСАГРО Чер.</td>
+                                                            <td>11.11.2014</td>
+                                                            <td>11.11.2014</td>
+                                                            <td>10124457</td>
+                                                            <td class="right-b">32</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>01.05.2014</td>
+                                                            <td>Riga</td>
+                                                            <td>2000</td>
+                                                            <td>МАР К</td>
+                                                            <td>40 REF</td>
+                                                            <td class="right-b">80</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        <tbody class="grey border">
+                                                        <tr>
+                                                            <td class="number "><a>328/26</a></td>
+                                                            <td>ОАО Кировско-Чипецкий</td>
+                                                            <td>11.11.2014</td>
+                                                            <td>11.11.2014</td>
+                                                            <td>20124900</td>
+                                                            <td class="right-b">18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>01.05.2014</td>
+                                                            <td>Panama</td>
+                                                            <td>2000</td>
+                                                            <td>МАР К</td>
+                                                            <td>40 REF</td>
+                                                            <td class="right-b">120</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr> <!--end tr вложенная таблица 2-->
+                                            </tbody>
+                                            <tbody class="grey border">
+                                            <tr>
+                                                <td class="number "><a>328/26</a></td>
+                                                <td>ОАО Кировско-Чипецкий</td>
+                                                <td>11.11.2014</td>
+                                                <td>11.11.2014</td>
+                                                <td>20124900</td>
+                                                <td class="right-b">18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>01.05.2014</td>
+                                                <td>Panama</td>
+                                                <td>2000</td>
+                                                <td>МАР К</td>
+                                                <td>40 REF</td>
+                                                <td class="right-b">120</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr> <!--end tr вложенная таблица-->
+                            </tbody>
+                            <tbody class="grey border">
+                                <tr>
+                                    <td class="number"><a>328/26</a></td>
+                                    <td>ОАО Кировско-Чипецкий</td>
+                                    <td>11.11.2014</td>
+                                    <td>11.11.2014</td>
+                                    <td>20124900</td>
+                                    <td>18</td>
+                                    <td>120.000</td>
+                                    <td rowspan="2" class="right-b"><a href="" class="file">9</a></td>
+                                </tr>
+                                <tr>
+                                    <td>01.05.2014</td>
+                                    <td>Panama</td>
+                                    <td>2000</td>
+                                    <td>МАР К</td>
+                                    <td>40 REF</td>
+                                    <td>120</td>
+                                    <td>10%</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="number"><a>328/26</a></td>
+                                    <td>ОАО Кировско-Чипецкий Комбинат Химический Комбинат</td>
+                                    <td>11.11.2014</td>
+                                    <td>11.11.2014</td>
+                                    <td>20124900</td>
+                                    <td>18</td>
+                                    <td>120.000</td>
+                                    <td rowspan="2" class="right-b"><a href="" class="file">1</a></td>
+                                </tr>
+                                <tr>
+                                    <td>01.05.2014</td>
+                                    <td>Panama</td>
+                                    <td>2000</td>
+                                    <td>МАР К</td>
+                                    <td>40 REF</td>
+                                    <td>120</td>
+                                    <td>10%</td>
+                                </tr>
+                            </tbody>
+                            <tbody class="grey border">
+                                <tr>
+                                    <td class="number"><a>328/26</a></td>
+                                    <td>ОАО Кировско-Чипецкий</td>
+                                    <td>11.11.2014</td>
+                                    <td>11.11.2014</td>
+                                    <td>20124900</td>
+                                    <td>18</td>
+                                    <td>120.000</td>
+                                    <td rowspan="2" class="right-b"><a href="" class="file">9</a></td>
+                                </tr>
+                                <tr>
+                                    <td>01.05.2014</td>
+                                    <td>Panama</td>
+                                    <td>2000</td>
+                                    <td>МАР К</td>
+                                    <td>40 REF</td>
+                                    <td>120</td>
+                                    <td>10%</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td class="number"><a>328/26</a></td>
+                                <td>ОАО Кировско-Чипецкий</td>
+                                <td>11.11.2014</td>
+                                <td>11.11.2014</td>
+                                <td>20124900</td>
+                                <td>18</td>
+                                <td>120.000</td>
+                                <td rowspan="2" class="right-b"><span class="file empty">&nbsp;&nbsp;</span></td>
+                            </tr>
+                            <tr>
+                                <td>01.05.2014</td>
+                                <td>Panama</td>
+                                <td>2000</td>
+                                <td>МАР К</td>
+                                <td>40 REF</td>
+                                <td>120</td>
+                                <td>10%</td>
+                            </tr>
+                            </tbody>
+                            <tbody class="grey border">
+                            <tr>
+                                <td class="number"><a>328/26</a></td>
+                                <td>ОАО Кировско-Чипецкий</td>
+                                <td>11.11.2014</td>
+                                <td>11.11.2014</td>
+                                <td>20124900</td>
+                                <td>18</td>
+                                <td>120.000</td>
+                                <td rowspan="2" class="right-b"><a href="" class="file">21</a></td>
+                            </tr>
+                            <tr>
+                                <td>01.05.2014</td>
+                                <td>Panama</td>
+                                <td>2000</td>
+                                <td>МАР К</td>
+                                <td>40 REF</td>
+                                <td>120</td>
+                                <td>10%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div><!--end sheet-->
+            </div><!--end contract-->
+            <div id="order" class="window-wrap">
+                <div class="sheet">
+                    <a class="trigger" href="">создать заявку</a>
+                    <header><h1>Заявки на контракт</h1></header>
+                    <table frame="void">
+                        <thead>
+                        <tr class="table_top3">
+                            <th width="113">Груз</th>
+                            <th width="149">Тип контейнера</th>
+                            <th width="213">Порт/Регион</th>
+                            <th width="131" rowspan="2">Мест в контейнере</th>
+                            <th width="232">Сюрвейер</th>
+                            <th width="94" rowspan="2">Идея</th>
+                            <th width="127" rowspan="2">Ставка</th>
+                            <th width="80" rowspan="2">Да</th>
+                            <th width="80" rowspan="2" class="special_border">Нет</th>
+                        </tr>
+                        <tr class="table_top3">
+                            <th>Вес</th>
+                            <th>Упаковка</th>
+                            <th>Дата</th>
+                            <th>Контакт</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="number">MFHR 3</td>
+                            <td>40 REF</td>
+                            <td>HCMC, Newport</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">80</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2" class="yes"></td>
+                            <td rowspan="2" class="no"></td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>Standard BB</td>
+                            <td>Июнь 2014</td>
+                            <td>9606850909, Константин</td>
+                        </tr>
+                        </tbody>
+                        <tbody class="grey border">
+                        <tr>
+                            <td class="number">UREA-Ф</td>
+                            <td>20 DC</td>
+                            <td>Asuncion</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">120</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2" class="yes"></td>
+                            <td rowspan="2" class="no"></td>
+                        </tr>
+                        <tr>
+                            <td>4000</td>
+                            <td>Standard BB</td>
+                            <td>Июль 2014</td>
+                            <td>988942304, Иван Петрович</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!--end sheet-->
+            </div><!--end order-->
+            <div id="archive" class="window-wrap">
+                <div class="sheet">
+                    <header><h1>Архив заявок</h1></header>
+                    <table>
+                        <thead>
+                        <tr class="table_top3">
+                            <th width="113" class="pack">Груз</th>
+                            <th width="149">Тип контейнера</th>
+                            <th width="213">Порт/Регион</th>
+                            <th width="131" rowspan="2">Мест в контейнере</th>
+                            <th width="232">Сюрвейер</th>
+                            <th width="94" rowspan="2">Идея</th>
+                            <th width="127" rowspan="2">Ставка</th>
+                            <th width="80" rowspan="2">Да</th>
+                            <th width="80" rowspan="2"  class="special_border">Нет</th>
+                        </tr>
+                        <tr class="table_top3">
+                            <th class="pack">Вес</th>
+                            <th>Упаковка</th>
+                            <th>Дата</th>
+                            <th>Контакт</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th colspan="9" class="year">2014</th></tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td class="number">MFHR 3</td>
+                            <td>40 REF</td>
+                            <td>HCMC, Newport</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">80</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2" class="no_red"></td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>Standard BB</td>
+                            <td>Июнь 2014</td>
+                            <td>9606850909, Константин</td>
+                        </tr>
+                        </tbody>
+                        <tbody class="grey border">
+                        <tr>
+                            <td class="number">UREA-Ф</td>
+                            <td>20 DC</td>
+                            <td>Asuncion</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">120</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2" class="yes_green"></td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>4000</td>
+                            <td>Standard BB</td>
+                            <td>Июль 2014</td>
+                            <td>988942304, Иван Петрович</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr><th colspan="9" class="year">2013</th></tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td class="number">MFHR 3</td>
+                            <td>40 REF</td>
+                            <td>HCMC, Newport</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">80</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2" class="no_red"></td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>Standard BB</td>
+                            <td>Июнь 2014</td>
+                            <td>9606850909, Константин</td>
+                        </tr>
+                        </tbody>
+                        <tbody class="grey border">
+                        <tr>
+                            <td class="number">UREA-Ф</td>
+                            <td>20 DC</td>
+                            <td>Asuncion</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">120</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"  class="no_red"></td>
+                        </tr>
+                        <tr>
+                            <td>4000</td>
+                            <td>Standard BB</td>
+                            <td>Июль 2014</td>
+                            <td>988942304, Иван Петрович</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td class="number">MFHR 3</td>
+                            <td>40 REF</td>
+                            <td>HCMC, Newport</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">80</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2" class="no_red"></td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>Standard BB</td>
+                            <td>Июнь 2014</td>
+                            <td>9606850909, Константин</td>
+                        </tr>
+                        </tbody>
+                        <tbody class="grey border">
+                        <tr>
+                            <td class="number">UREA-Ф</td>
+                            <td>20 DC</td>
+                            <td>Asuncion</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">120</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2" class="yes_green"></td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>4000</td>
+                            <td>Standard BB</td>
+                            <td>Июль 2014</td>
+                            <td>988942304, Иван Петрович</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td class="number">MFHR 3</td>
+                            <td>40 REF</td>
+                            <td>HCMC, Newport</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">80</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2" class="no_red"></td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>Standard BB</td>
+                            <td>Июнь 2014</td>
+                            <td>9606850909, Константин</td>
+                        </tr>
+                        </tbody>
+                        <tbody class="grey border">
+                        <tr>
+                            <td class="number">UREA-Ф</td>
+                            <td>20 DC</td>
+                            <td>Asuncion</td>
+                            <td rowspan="2">28</td>
+                            <td>International</td>
+                            <td rowspan="2">120</td>
+                            <td rowspan="2"><input type="text" class="rate" placeholder="0"></td>
+                            <td rowspan="2" class="yes_green"></td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>4000</td>
+                            <td>Standard BB</td>
+                            <td>Июль 2014</td>
+                            <td>988942304, Иван Петрович</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!--end sheet-->
+            </div><!--end archive-->
+        </section><!--end pages-->
+    </div><!--end page-->
+    <div class="modal noselect" id="test-modal1" style="display: none"> <!--окно -->
+        <span class="close noselect"></span> <!-- Кнопка закрыть -->
+        <h1 class="noselect">Создание заявки на контракт</h1>
+        <p class="noselect">Груз</p>
+        <input type="text" class="order_data noselect" />
+        <ul>
+            <li class="noselect">
+                <p class="noselect">Вес</p>
+                <input type="text" class="order_data weight noselect" />
+            </li>
+            <li class="noselect">
+                <p class="noselect">Тип контейнера</p>
+                <input type="text" class="order_data container_type noselect" />
+            </li>
+            <li class="noselect">
+                <p class="noselect">Мест в контейнере</p>
+                <input type="text" class="order_data container_place noselect" />
+            </li>
+        </ul>
+        <p class="noselect">Упаковка</p>
+        <input type="text" class="order_data noselect" />
+        <p class="noselect">Регион и порт</p>
+        <input type="text" class="order_data noselect" />
+        <p class="noselect">Сюрвейер</p>
+        <input type="text" class="order_data noselect" />
+        <ul>
+            <li class="noselect">
+                <p class="noselect">Контактное лицо </p>
+                <input type="text" class="order_data contact_person noselect" />
+            </li>
+            <li class="noselect">
+                <p class="noselect">Идея</p>
+                <input type="text" class="order_data idea noselect" />
+            </li>
+        </ul>
+        <div class="confirm noselect">
+            <span class="noselect">Как только ваша заявка будет обработана с вами свяжется<br>
+                персональный менеджер</span>
+            <a href="#" class="button_order noselect">Отправить заявку</a>
+        </div>
+    </div>
+    <div class="modal" id="test-modal2" style="display: none"> <!--окно -->
+        <span class="close"></span> <!-- Кнопка закрыть -->
+        <h1>Список файлов контракта 328/26</h1>
+        <ul>
+            <li><span>pdf</span><a href="#">Information.pdf</a></li>
+            <li><span>pdf</span><a href="#">Information.pdf</a></li>
+            <li><span>pdf</span><a href="#">Information.pdf</a></li>
+            <li><span>xls</span><a href="#">Smeta na dostavku 07_14.xls</a></li>
+            <li><span>xls</span><a href="#">Smeta na dostavku 07_14.xls</a></li>
+            <li><span>xls</span><a href="#">Smeta na dostavku 07_14.xls</a></li>
+            <li><span>doc</span><a href="#">Проверено-Иванов.doc</a></li>
+            <li><span>doc</span><a href="#">Проверено-Иванов.doc</a></li>
+        </ul>
+        <p id="file_title">Просмотр — Smeta na dostavku 07_14.xls</p>
+        <div class="modal_view_file"></div>
+        <div class="comments">
+            <h2>Комментарии к файлу</h2>
+            <div class="previous_comments">
+                <p>Иван Иванов</p><span>12 апреля 2014 в 13:40</span>
+                <div class="previous_comments1">
+                    <p>Все процессы идут в рабочем режиме. Выгрузка намечена на 14 марта.</p>
+                   <img src="../images/comments1_corner.png">
+                </div>
+            </div>
+            <h2>Оставить комментарий</h2>
+            <textarea name="comment" placeholder="Текст комментария"></textarea>
+            <a href="#" class="button_file">Сохранить</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+            jQuery(function($){
+                // bind event handlers to modal triggers
+                $('body').on('click', '.trigger', function(e){
+                    e.preventDefault();
+                    $('#test-modal1').modal().open();
+                });
+
+                // attach modal close handler
+                $('.modal .close').on('click', function(e){
+                    e.preventDefault();
+                    $.modal().close();
+                });
+
+                // below isn't important (demo-specific things)
+                $('.modal .more-toggle').on('click', function(e){
+                    e.stopPropagation();
+                    $('.modal .more').toggle();
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            jQuery(function($){
+                // bind event handlers to modal triggers
+                $('body').on('click', '.trigger-file', function(e){
+                    e.preventDefault();
+                    $('#test-modal2').modal().open();
+                });
+
+                // attach modal close handler
+                $('.modal .close').on('click', function(e){
+                    e.preventDefault();
+                    $.modal().close();
+                });
+
+                // below isn't important (demo-specific things)
+                $('.modal .more-toggle').on('click', function(e){
+                    e.stopPropagation();
+                    $('.modal .more').toggle();
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

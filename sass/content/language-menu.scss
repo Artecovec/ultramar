@@ -1,0 +1,9 @@
+.language-menu {
+    display: inline-block;
+    @include user-select( none );
+    }
+
+@import "language-menu/language-menu_head";
+@import "language-menu/language-menu_list";
+@import "language-menu/language-menu_button";
+@import "language-menu/language-menu_link";

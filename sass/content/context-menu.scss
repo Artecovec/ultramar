@@ -1,0 +1,43 @@
+.context-menu {
+    @include inline-block;
+    z-index: 5;
+
+    padding: 14px 17px 0;
+
+    background: #32aacf url( /images/context-menu-gradient.png ) right bottom no-repeat;
+
+    font-size: 12px;
+    @include user-select( none );
+
+    &:before {
+        position: absolute;
+        display: block;
+
+        top:  -38px;
+        left: -32px;
+
+        width:  179px;
+        height: 38px;
+
+        background: url( /images/context-menu-balun.png ) no-repeat;
+        content: "";
+        }
+
+    &:after {
+        position: absolute;
+        display: block;
+
+        bottom: -9px;
+        left:    0;
+        right:   0;
+
+        height: 9px;
+
+        background: url( /images/context-menu-border.png ) bottom repeat-x;
+        content: "";
+        }
+    }
+
+@import "context-menu/context-menu-header";
+@import "context-menu/context-menu-button";
+@import "context-menu/context-menu-link";

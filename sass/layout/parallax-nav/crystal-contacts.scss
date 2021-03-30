@@ -1,0 +1,23 @@
+#crystal-contacts {
+    left: 190px;
+    top:  -100px;
+
+    width:  image-width(  "/images/crystal-contacts.png" );
+    height: image-height( "/images/crystal-contacts.png" );
+
+    .parallax-nav_single_crystal_normal {
+        background-image: url( /images/crystal-contacts.png );
+        }
+
+    .parallax-nav_single_crystal_bright {
+        background-image: url( /images/crystal-contacts-bright.png );
+        }
+
+    .context-menu {
+        top:  66px;
+        left: 76px;
+
+        width: 179px;
+        }
+
+    }

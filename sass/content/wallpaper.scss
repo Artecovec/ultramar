@@ -1,0 +1,14 @@
+.wallpaper {
+    position: fixed;
+
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+
+    @include user-select( none );
+    }
+
+@import "wallpaper/wallpaper_shadow";
+@import "wallpaper/wallpaper_shadow__top";
+@import "wallpaper/wallpaper_shadow__bottom";

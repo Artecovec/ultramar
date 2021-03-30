@@ -1,0 +1,9 @@
+.context-menu-button {
+    border-bottom: 1px dotted #62cff1;
+
+    font-size: 14px;
+
+    &:last-child {
+        border-bottom: none;
+        }
+    }

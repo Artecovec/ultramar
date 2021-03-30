@@ -1,0 +1,14 @@
+@import "base/fonts";
+@import "base/animation";
+
+html {
+    background: black url( /images/wallpaper.jpg ) center no-repeat;
+    color: white;
+    font: $base-font-size $base-font-family;
+    letter-spacing: 0.1em;
+    cursor: default;
+    }
+
+body {
+    line-height: 1.5;
+    }
